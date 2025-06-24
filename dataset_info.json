@@ -1,0 +1,9 @@
+{
+  "intimate_dataset": {
+    "file_name": "intimate_sft_dataset.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    }
+  }
+}
