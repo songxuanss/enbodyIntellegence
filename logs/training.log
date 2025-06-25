@@ -1,0 +1,196 @@
+2025-06-25 21:47:06 - root - INFO - 🚀 日志系统初始化完成
+2025-06-25 21:47:06 - root - INFO - 🚀 启动 SFT 训练系统...
+2025-06-25 21:47:07 - root - INFO - 📋 解析命令行参数...
+2025-06-25 21:47:07 - root - INFO - ✅ 解析完成，模式: demo
+2025-06-25 21:47:07 - root - INFO - 🔧 根据命令行参数更新配置...
+2025-06-25 21:47:07 - root - INFO - 🔄 日志配置已更新
+2025-06-25 21:47:07 - root - INFO - 🔄 训练轮数: 3
+2025-06-25 21:47:07 - root - INFO - 📦 批次大小: 4
+2025-06-25 21:47:07 - root - INFO - 📈 学习率: 2e-05
+2025-06-25 21:47:07 - root - INFO - 📏 最大长度: 512
+2025-06-25 21:47:07 - root - INFO - ✅ 配置更新完成
+2025-06-25 21:47:07 - root - INFO - 🎪 启动演示模式...
+2025-06-25 21:47:07 - root - INFO - 📋 当前配置信息:
+2025-06-25 21:47:07 - root - INFO - 🤖 模型配置:
+2025-06-25 21:47:07 - root - INFO -    模型名称: Qwen/Qwen2.5-72B-Instruct
+2025-06-25 21:47:07 - root - INFO -    数据类型: bfloat16
+2025-06-25 21:47:07 - root - INFO -    8位量化: True
+2025-06-25 21:47:07 - root - INFO -    LoRA r: 16
+2025-06-25 21:47:07 - root - INFO -    LoRA alpha: 64
+2025-06-25 21:47:07 - root - INFO - 📊 数据配置:
+2025-06-25 21:47:07 - root - INFO -    活跃数据集: ['english_adult', 'chinese_shy']
+2025-06-25 21:47:07 - root - INFO -    最大长度: 512
+2025-06-25 21:47:07 - root - INFO -    输出文件: combined_sft_dataset.json
+2025-06-25 21:47:07 - root - INFO - ⚙️  训练配置:
+2025-06-25 21:47:07 - root - INFO -    训练轮数: 3
+2025-06-25 21:47:07 - root - INFO -    批次大小: 4
+2025-06-25 21:47:07 - root - INFO -    学习率: 2e-05
+2025-06-25 21:47:07 - root - INFO -    输出目录: ./models/sft_output
+2025-06-25 21:47:07 - data_manager - INFO - 📋 列出可用数据集...
+2025-06-25 21:47:07 - data_manager - INFO - 📊 数据管理器初始化完成
+2025-06-25 21:47:07 - data_manager - INFO - ✅ 数据集列表显示完成
+2025-06-25 21:47:07 - root - INFO - ✅ 演示完成
+2025-06-25 21:47:07 - root - INFO - 🎉 任务执行成功!
+2025-06-25 21:47:15 - data_manager - INFO - 🚀 启动快速数据加载...
+2025-06-25 21:47:15 - data_manager - INFO - 📋 使用指定数据集: ['english_adult']
+2025-06-25 21:47:15 - data_manager - INFO - 📊 数据管理器初始化完成
+2025-06-25 21:47:15 - data_manager - INFO - 🚀 开始加载数据集...
+2025-06-25 21:47:15 - data_manager - INFO - 📋 活跃数据集: ['english_adult']
+2025-06-25 21:47:15 - data_manager - INFO - 🔄 处理数据集: english_adult
+2025-06-25 21:47:15 - data_manager - INFO - 🔄 开始加载数据模块: sft_adult_doll_eng.py
+2025-06-25 21:47:16 - data_manager - WARNING - ⚠️  模块中未找到数据变量: sft_adult_doll_eng.py
+2025-06-25 21:47:16 - data_manager - WARNING - ⚠️  跳过无效数据集: english_adult
+2025-06-25 21:47:16 - data_manager - INFO - 🎉 数据集加载完成! 总计 0 个数据集，0 条记录
+2025-06-25 21:47:16 - data_manager - ERROR - ❌ 快速数据加载失败!
+2025-06-25 21:48:52 - data_manager - INFO - 🚀 启动快速数据加载...
+2025-06-25 21:48:52 - data_manager - INFO - 📋 使用指定数据集: ['english_adult']
+2025-06-25 21:48:52 - data_manager - INFO - 📊 数据管理器初始化完成
+2025-06-25 21:48:52 - data_manager - INFO - 🚀 开始加载数据集...
+2025-06-25 21:48:52 - data_manager - INFO - 📋 活跃数据集: ['english_adult']
+2025-06-25 21:48:52 - data_manager - INFO - 🔄 处理数据集: english_adult
+2025-06-25 21:48:52 - data_manager - INFO - 🔄 开始加载数据模块: sft_adult_doll_eng.py
+2025-06-25 21:48:53 - data_manager - INFO - ✅ 成功加载 1000 条数据记录从: sft_adult_doll_eng.py
+2025-06-25 21:48:53 - data_manager - INFO - ✅ 数据格式验证通过: english_adult
+2025-06-25 21:48:53 - data_manager - INFO - ✅ 数据集加载成功: english_adult (1000 条记录)
+2025-06-25 21:48:53 - data_manager - INFO - 🎉 数据集加载完成! 总计 1 个数据集，1000 条记录
+2025-06-25 21:48:53 - data_manager - INFO - ✅ 快速数据加载成功!
+2025-06-25 21:48:53 - data_manager - INFO - 📊 统计信息生成完成: 1000 条总记录
+2025-06-25 21:48:53 - data_manager - INFO - 💾 开始保存合并数据集到: combined_sft_dataset.json
+2025-06-25 21:48:53 - data_manager - INFO - 🔄 开始合并数据集...
+2025-06-25 21:48:53 - data_manager - INFO - ✅ 数据集合并完成! 总计 1000 条记录
+2025-06-25 21:48:53 - data_manager - INFO - ✅ 数据集保存成功: combined_sft_dataset.json (1000 条记录)
+2025-06-25 21:53:25 - root - INFO - 🚀 日志系统初始化完成
+2025-06-25 21:53:25 - root - INFO - 🚀 启动 SFT 训练系统...
+2025-06-25 21:53:25 - root - INFO - 📋 解析命令行参数...
+2025-06-25 21:53:25 - root - INFO - ✅ 解析完成，模式: demo
+2025-06-25 21:53:25 - root - INFO - 🔧 根据命令行参数更新配置...
+2025-06-25 21:53:25 - root - INFO - 🔄 日志配置已更新
+2025-06-25 21:53:25 - root - INFO - 🔄 训练轮数: 3
+2025-06-25 21:53:25 - root - INFO - 📦 批次大小: 4
+2025-06-25 21:53:25 - root - INFO - 📈 学习率: 2e-05
+2025-06-25 21:53:25 - root - INFO - 📏 最大长度: 512
+2025-06-25 21:53:25 - root - INFO - ✅ 配置更新完成
+2025-06-25 21:53:25 - root - INFO - 🎪 启动演示模式...
+2025-06-25 21:53:25 - root - INFO - 📋 当前配置信息:
+2025-06-25 21:53:25 - root - INFO - 🤖 模型配置:
+2025-06-25 21:53:25 - root - INFO -    模型名称: Qwen/Qwen2.5-72B-Instruct
+2025-06-25 21:53:25 - root - INFO -    数据类型: bfloat16
+2025-06-25 21:53:25 - root - INFO -    8位量化: True
+2025-06-25 21:53:25 - root - INFO -    LoRA r: 16
+2025-06-25 21:53:25 - root - INFO -    LoRA alpha: 64
+2025-06-25 21:53:25 - root - INFO - 📊 数据配置:
+2025-06-25 21:53:25 - root - INFO -    活跃数据集: ['english_adult', 'chinese_shy']
+2025-06-25 21:53:25 - root - INFO -    最大长度: 512
+2025-06-25 21:53:25 - root - INFO -    输出文件: combined_sft_dataset.json
+2025-06-25 21:53:25 - root - INFO - ⚙️  训练配置:
+2025-06-25 21:53:25 - root - INFO -    训练轮数: 3
+2025-06-25 21:53:25 - root - INFO -    批次大小: 4
+2025-06-25 21:53:25 - root - INFO -    学习率: 2e-05
+2025-06-25 21:53:25 - root - INFO -    输出目录: ./models/sft_output
+2025-06-25 21:53:25 - data_manager - INFO - 📋 列出可用数据集...
+2025-06-25 21:53:25 - data_manager - INFO - 📊 数据管理器初始化完成
+2025-06-25 21:53:25 - data_manager - INFO - ✅ 数据集列表显示完成
+2025-06-25 21:53:25 - root - INFO - ✅ 演示完成
+2025-06-25 21:53:25 - root - INFO - 🎉 任务执行成功!
+2025-06-25 21:56:12 - root - INFO - 🚀 日志系统初始化完成
+2025-06-25 21:56:12 - root - INFO - 🚀 启动 SFT 训练系统...
+2025-06-25 21:56:12 - root - INFO - 📋 解析命令行参数...
+2025-06-25 21:56:12 - root - INFO - ✅ 解析完成，模式: demo
+2025-06-25 21:56:12 - root - INFO - 🔧 根据命令行参数更新配置...
+2025-06-25 21:56:12 - root - INFO - 🔄 日志配置已更新
+2025-06-25 21:56:12 - root - INFO - 🔄 训练轮数: 3
+2025-06-25 21:56:12 - root - INFO - 📦 批次大小: 4
+2025-06-25 21:56:12 - root - INFO - 📈 学习率: 2e-05
+2025-06-25 21:56:12 - root - INFO - 📏 最大长度: 512
+2025-06-25 21:56:12 - root - INFO - ✅ 配置更新完成
+2025-06-25 21:56:12 - root - INFO - 🎪 启动演示模式...
+2025-06-25 21:56:12 - root - INFO - 📋 当前配置信息:
+2025-06-25 21:56:12 - root - INFO - 🤖 模型配置:
+2025-06-25 21:56:12 - root - INFO -    模型名称: Qwen/Qwen2.5-72B-Instruct
+2025-06-25 21:56:12 - root - INFO -    数据类型: bfloat16
+2025-06-25 21:56:12 - root - INFO -    8位量化: True
+2025-06-25 21:56:12 - root - INFO -    LoRA r: 16
+2025-06-25 21:56:12 - root - INFO -    LoRA alpha: 64
+2025-06-25 21:56:12 - root - INFO - 📊 数据配置:
+2025-06-25 21:56:12 - root - INFO -    活跃数据集: ['english_adult', 'chinese_shy']
+2025-06-25 21:56:12 - root - INFO -    最大长度: 512
+2025-06-25 21:56:12 - root - INFO -    输出文件: combined_sft_dataset.json
+2025-06-25 21:56:12 - root - INFO - ⚙️  训练配置:
+2025-06-25 21:56:12 - root - INFO -    训练轮数: 3
+2025-06-25 21:56:12 - root - INFO -    批次大小: 4
+2025-06-25 21:56:12 - root - INFO -    学习率: 2e-05
+2025-06-25 21:56:12 - root - INFO -    输出目录: ./models/sft_output
+2025-06-25 21:56:12 - data_manager - INFO - 📋 列出可用数据集...
+2025-06-25 21:56:12 - data_manager - INFO - 📊 数据管理器初始化完成
+2025-06-25 21:56:12 - data_manager - DEBUG - 📋 获取数据集信息...
+2025-06-25 21:56:12 - data_manager - INFO - ✅ 数据集列表显示完成
+2025-06-25 21:56:12 - root - INFO - ✅ 演示完成
+2025-06-25 21:56:12 - root - INFO - 🎉 任务执行成功!
+2025-06-25 22:04:13 - root - INFO - 🚀 日志系统初始化完成
+2025-06-25 22:04:13 - root - INFO - 🚀 启动 SFT 训练系统...
+2025-06-25 22:04:13 - root - INFO - 📋 解析命令行参数...
+2025-06-25 22:04:13 - root - INFO - ✅ 解析完成，模式: demo
+2025-06-25 22:04:13 - root - INFO - 🔧 根据命令行参数更新配置...
+2025-06-25 22:04:13 - root - INFO - 🔄 日志配置已更新
+2025-06-25 22:04:13 - root - INFO - 🤖 模型已设置为: microsoft/Phi-3-mini-4k-instruct
+2025-06-25 22:04:13 - root - INFO - 🔄 训练轮数: 3
+2025-06-25 22:04:13 - root - INFO - 📦 批次大小: 4
+2025-06-25 22:04:13 - root - INFO - 📈 学习率: 2e-05
+2025-06-25 22:04:13 - root - INFO - 📏 最大长度: 512
+2025-06-25 22:04:13 - root - INFO - ✅ 配置更新完成
+2025-06-25 22:04:13 - root - INFO - 🎪 启动演示模式...
+2025-06-25 22:04:13 - root - INFO - 📋 当前配置信息:
+2025-06-25 22:04:13 - root - INFO - 🤖 模型配置:
+2025-06-25 22:04:13 - root - INFO -    模型名称: microsoft/Phi-3-mini-4k-instruct
+2025-06-25 22:04:13 - root - INFO -    数据类型: bfloat16
+2025-06-25 22:04:13 - root - INFO -    8位量化: True
+2025-06-25 22:04:13 - root - INFO -    LoRA r: 16
+2025-06-25 22:04:13 - root - INFO -    LoRA alpha: 64
+2025-06-25 22:04:13 - root - INFO - 📊 数据配置:
+2025-06-25 22:04:13 - root - INFO -    活跃数据集: ['english_adult', 'chinese_shy']
+2025-06-25 22:04:13 - root - INFO -    最大长度: 512
+2025-06-25 22:04:13 - root - INFO -    输出文件: combined_sft_dataset.json
+2025-06-25 22:04:13 - root - INFO - ⚙️  训练配置:
+2025-06-25 22:04:13 - root - INFO -    训练轮数: 3
+2025-06-25 22:04:13 - root - INFO -    批次大小: 4
+2025-06-25 22:04:13 - root - INFO -    学习率: 2e-05
+2025-06-25 22:04:13 - root - INFO -    输出目录: ./models/sft_output
+2025-06-25 22:04:13 - data_manager - INFO - 📋 列出可用数据集...
+2025-06-25 22:04:13 - data_manager - INFO - 📊 数据管理器初始化完成
+2025-06-25 22:04:13 - data_manager - INFO - ✅ 数据集列表显示完成
+2025-06-25 22:04:13 - root - INFO - ✅ 演示完成
+2025-06-25 22:04:13 - root - INFO - 🎉 任务执行成功!
+2025-06-25 22:04:43 - root - INFO - 🚀 日志系统初始化完成
+2025-06-25 22:04:43 - root - INFO - 🚀 启动 SFT 训练系统...
+2025-06-25 22:04:43 - root - INFO - 📋 解析命令行参数...
+2025-06-25 22:04:43 - root - INFO - ✅ 解析完成，模式: demo
+2025-06-25 22:04:43 - root - INFO - 🔧 根据命令行参数更新配置...
+2025-06-25 22:04:43 - root - INFO - 🔄 日志配置已更新
+2025-06-25 22:04:43 - root - INFO - 🤖 模型已设置为: qwen_3b
+2025-06-25 22:04:43 - root - INFO - 🔄 训练轮数: 3
+2025-06-25 22:04:43 - root - INFO - 📦 批次大小: 4
+2025-06-25 22:04:43 - root - INFO - 📈 学习率: 2e-05
+2025-06-25 22:04:43 - root - INFO - 📏 最大长度: 512
+2025-06-25 22:04:43 - root - INFO - ✅ 配置更新完成
+2025-06-25 22:04:43 - root - INFO - 🎪 启动演示模式...
+2025-06-25 22:04:43 - root - INFO - 📋 当前配置信息:
+2025-06-25 22:04:43 - root - INFO - 🤖 模型配置:
+2025-06-25 22:04:43 - root - INFO -    模型名称: Qwen/Qwen2.5-3B-Instruct
+2025-06-25 22:04:43 - root - INFO -    数据类型: bfloat16
+2025-06-25 22:04:43 - root - INFO -    8位量化: True
+2025-06-25 22:04:43 - root - INFO -    LoRA r: 16
+2025-06-25 22:04:43 - root - INFO -    LoRA alpha: 64
+2025-06-25 22:04:43 - root - INFO - 📊 数据配置:
+2025-06-25 22:04:43 - root - INFO -    活跃数据集: ['english_adult', 'chinese_shy']
+2025-06-25 22:04:43 - root - INFO -    最大长度: 512
+2025-06-25 22:04:43 - root - INFO -    输出文件: combined_sft_dataset.json
+2025-06-25 22:04:43 - root - INFO - ⚙️  训练配置:
+2025-06-25 22:04:43 - root - INFO -    训练轮数: 3
+2025-06-25 22:04:43 - root - INFO -    批次大小: 4
+2025-06-25 22:04:43 - root - INFO -    学习率: 2e-05
+2025-06-25 22:04:43 - root - INFO -    输出目录: ./models/sft_output
+2025-06-25 22:04:43 - data_manager - INFO - 📋 列出可用数据集...
+2025-06-25 22:04:43 - data_manager - INFO - 📊 数据管理器初始化完成
+2025-06-25 22:04:43 - data_manager - INFO - ✅ 数据集列表显示完成
+2025-06-25 22:04:43 - root - INFO - ✅ 演示完成
+2025-06-25 22:04:43 - root - INFO - 🎉 任务执行成功!

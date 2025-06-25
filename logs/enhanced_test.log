@@ -1,0 +1,203 @@
+2025-06-25 21:54:57 - root - INFO - 🚀 增强日志系统初始化完成
+2025-06-25 21:54:57 - root - INFO - 🎪 开始日志功能全面测试
+2025-06-25 21:54:57 - root - INFO - 🕐 测试开始时间: 2025-06-25 21:54:57
+2025-06-25 21:54:57 - root - INFO - 🧪 执行测试 1/7: test_logging_levels
+2025-06-25 21:54:57 - root - INFO - ============================================================
+2025-06-25 21:54:57 - root - INFO - 🧪 测试不同日志级别
+2025-06-25 21:54:57 - root - INFO - ============================================================
+2025-06-25 21:54:57 - root - DEBUG - 🔍 DEBUG: 调试信息 - 数据格式检查
+2025-06-25 21:54:57 - root - INFO - ℹ️  INFO: 常规信息 - 任务开始执行
+2025-06-25 21:54:57 - root - WARNING - ⚠️  WARNING: 警告信息 - 配置参数可能需要调整
+2025-06-25 21:54:57 - root - ERROR - ❌ ERROR: 错误信息 - 文件读取失败
+2025-06-25 21:54:57 - root - CRITICAL - 🚨 CRITICAL: 严重错误 - 系统内存不足
+2025-06-25 21:54:57 - root - INFO - ✅ 日志级别测试完成
+2025-06-25 21:54:57 - root - INFO - ✅ 测试 1 通过
+2025-06-25 21:54:57 - root - INFO - 🧪 执行测试 2/7: test_phase_tracking
+2025-06-25 21:54:57 - root - INFO - ============================================================
+2025-06-25 21:54:57 - root - INFO - 📊 测试阶段性进度追踪
+2025-06-25 21:54:57 - root - INFO - ============================================================
+2025-06-25 21:54:57 - root - INFO - 🔧 步骤 1/8: 初始化环境
+2025-06-25 21:54:57 - root - DEBUG - 📈 当前进度: 12.5%
+2025-06-25 21:54:57 - root - INFO - ✅ 步骤 1 完成: 初始化环境
+2025-06-25 21:54:57 - root - INFO - 📋 步骤 2/8: 加载配置文件
+2025-06-25 21:54:57 - root - DEBUG - 📈 当前进度: 25.0%
+2025-06-25 21:54:57 - root - INFO - ✅ 步骤 2 完成: 加载配置文件
+2025-06-25 21:54:57 - root - INFO - 🔍 步骤 3/8: 验证数据源
+2025-06-25 21:54:57 - root - DEBUG - 📈 当前进度: 37.5%
+2025-06-25 21:54:58 - root - INFO - ✅ 步骤 3 完成: 验证数据源
+2025-06-25 21:54:58 - root - INFO - 📊 步骤 4/8: 准备训练数据
+2025-06-25 21:54:58 - root - DEBUG - 📈 当前进度: 50.0%
+2025-06-25 21:54:58 - root - INFO - ✅ 步骤 4 完成: 准备训练数据
+2025-06-25 21:54:58 - root - INFO - 🤖 步骤 5/8: 设置模型参数
+2025-06-25 21:54:58 - root - DEBUG - 📈 当前进度: 62.5%
+2025-06-25 21:54:58 - root - INFO - ✅ 步骤 5 完成: 设置模型参数
+2025-06-25 21:54:58 - root - INFO - 🚀 步骤 6/8: 开始训练过程
+2025-06-25 21:54:58 - root - DEBUG - 📈 当前进度: 75.0%
+2025-06-25 21:54:58 - root - INFO - ✅ 步骤 6 完成: 开始训练过程
+2025-06-25 21:54:58 - root - INFO - 💾 步骤 7/8: 保存训练结果
+2025-06-25 21:54:58 - root - DEBUG - 📈 当前进度: 87.5%
+2025-06-25 21:54:58 - root - INFO - ✅ 步骤 7 完成: 保存训练结果
+2025-06-25 21:54:58 - root - INFO - 🧹 步骤 8/8: 清理临时文件
+2025-06-25 21:54:58 - root - DEBUG - 📈 当前进度: 100.0%
+2025-06-25 21:54:59 - root - INFO - ✅ 步骤 8 完成: 清理临时文件
+2025-06-25 21:54:59 - root - INFO - 🎉 所有阶段执行完成!
+2025-06-25 21:54:59 - root - INFO - ✅ 测试 2 通过
+2025-06-25 21:54:59 - root - INFO - 🧪 执行测试 3/7: test_error_handling
+2025-06-25 21:54:59 - root - INFO - ============================================================
+2025-06-25 21:54:59 - root - INFO - 🔥 测试错误处理和详细错误记录
+2025-06-25 21:54:59 - root - INFO - ============================================================
+2025-06-25 21:54:59 - root - INFO - 🔄 尝试读取不存在的文件...
+2025-06-25 21:54:59 - root - ERROR - ❌ 文件读取失败: [Errno 2] No such file or directory: 'non_existent_file.txt'
+Traceback (most recent call last):
+  File "test_logging.py", line 100, in test_error_handling
+    with open("non_existent_file.txt", "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'non_existent_file.txt'
+2025-06-25 21:54:59 - root - INFO - 🔄 尝试处理错误格式的数据...
+2025-06-25 21:54:59 - root - ERROR - ❌ 数据键值错误: 'nonexistent_key'
+Traceback (most recent call last):
+  File "test_logging.py", line 109, in test_error_handling
+    result = invalid_data["nonexistent_key"]
+KeyError: 'nonexistent_key'
+2025-06-25 21:54:59 - root - INFO - 🔄 尝试执行类型不匹配的操作...
+2025-06-25 21:54:59 - root - ERROR - ❌ 类型错误: can only concatenate str (not "int") to str
+Traceback (most recent call last):
+  File "test_logging.py", line 116, in test_error_handling
+    result = "string" + 123
+TypeError: can only concatenate str (not "int") to str
+2025-06-25 21:54:59 - root - INFO - ✅ 错误处理测试完成
+2025-06-25 21:54:59 - root - INFO - ✅ 测试 3 通过
+2025-06-25 21:54:59 - root - INFO - 🧪 执行测试 4/7: test_performance_monitoring
+2025-06-25 21:54:59 - root - INFO - ============================================================
+2025-06-25 21:54:59 - root - INFO - ⚡ 测试性能监控和时间统计
+2025-06-25 21:54:59 - root - INFO - ============================================================
+2025-06-25 21:54:59 - root - INFO - 🔄 开始执行: 数据加载
+2025-06-25 21:54:59 - root - INFO - ✅ 数据加载 完成
+2025-06-25 21:54:59 - root - INFO - ⏱️  耗时: 0.50秒
+2025-06-25 21:54:59 - root - DEBUG - 🚀 数据加载 执行效率良好: 0.50秒
+2025-06-25 21:54:59 - root - INFO - 🔄 开始执行: 模型初始化
+2025-06-25 21:55:00 - root - INFO - ✅ 模型初始化 完成
+2025-06-25 21:55:00 - root - INFO - ⏱️  耗时: 1.00秒
+2025-06-25 21:55:00 - root - WARNING - ⚠️  模型初始化 执行时间较长: 1.00秒
+2025-06-25 21:55:00 - root - INFO - 🔄 开始执行: 训练执行
+2025-06-25 21:55:02 - root - INFO - ✅ 训练执行 完成
+2025-06-25 21:55:02 - root - INFO - ⏱️  耗时: 2.00秒
+2025-06-25 21:55:02 - root - WARNING - ⚠️  训练执行 执行时间较长: 2.00秒
+2025-06-25 21:55:02 - root - INFO - 🔄 开始执行: 结果保存
+2025-06-25 21:55:02 - root - INFO - ✅ 结果保存 完成
+2025-06-25 21:55:02 - root - INFO - ⏱️  耗时: 0.30秒
+2025-06-25 21:55:02 - root - DEBUG - 🚀 结果保存 执行效率良好: 0.30秒
+2025-06-25 21:55:02 - root - INFO - 📊 总执行时间: 5.41秒
+2025-06-25 21:55:02 - root - INFO - ✅ 测试 4 通过
+2025-06-25 21:55:02 - root - INFO - 🧪 执行测试 5/7: test_data_operations_logging
+2025-06-25 21:55:02 - root - INFO - ============================================================
+2025-06-25 21:55:02 - root - INFO - 📊 测试数据操作日志记录
+2025-06-25 21:55:02 - root - INFO - ============================================================
+2025-06-25 21:55:02 - root - INFO - 🔄 初始化数据管理器...
+2025-06-25 21:55:02 - data_manager - INFO - 📊 数据管理器初始化完成
+2025-06-25 21:55:02 - root - INFO - 🔄 加载数据集...
+2025-06-25 21:55:02 - data_manager - INFO - 🚀 开始加载数据集...
+2025-06-25 21:55:02 - data_manager - INFO - 📋 活跃数据集: ['english_adult', 'chinese_shy']
+2025-06-25 21:55:02 - data_manager - INFO - 🔄 处理数据集: english_adult
+2025-06-25 21:55:02 - data_manager - DEBUG - 📄 模块文件: sft_adult_doll_eng.py
+2025-06-25 21:55:02 - data_manager - INFO - 🔄 开始加载数据模块: sft_adult_doll_eng.py
+2025-06-25 21:55:02 - data_manager - DEBUG - 📂 读取文件: /home/admin/projects/enbodyIntellegence/SFT/sft_adult_doll_eng.py
+2025-06-25 21:55:03 - data_manager - DEBUG - ✅ 找到数据变量: sft_training_data
+2025-06-25 21:55:03 - data_manager - DEBUG - 🔄 格式化对话数据: sft_adult_doll_eng.py
+2025-06-25 21:55:03 - data_manager - DEBUG - ✅ 格式化完成: 1000 条记录
+2025-06-25 21:55:03 - data_manager - INFO - ✅ 成功加载 1000 条数据记录从: sft_adult_doll_eng.py
+2025-06-25 21:55:03 - data_manager - DEBUG - 🔍 验证数据格式: english_adult
+2025-06-25 21:55:03 - data_manager - INFO - ✅ 数据格式验证通过: english_adult
+2025-06-25 21:55:03 - data_manager - INFO - ✅ 数据集加载成功: english_adult (1000 条记录)
+2025-06-25 21:55:03 - data_manager - INFO - 🔄 处理数据集: chinese_shy
+2025-06-25 21:55:03 - data_manager - DEBUG - 📄 模块文件: sft_adult_doll_shy_chn.py
+2025-06-25 21:55:03 - data_manager - INFO - 🔄 开始加载数据模块: sft_adult_doll_shy_chn.py
+2025-06-25 21:55:03 - data_manager - DEBUG - 📂 读取文件: /home/admin/projects/enbodyIntellegence/SFT/sft_adult_doll_shy_chn.py
+2025-06-25 21:55:04 - data_manager - DEBUG - ✅ 找到数据变量: sft_training_data
+2025-06-25 21:55:04 - data_manager - DEBUG - 🔄 格式化对话数据: sft_adult_doll_shy_chn.py
+2025-06-25 21:55:04 - data_manager - DEBUG - ✅ 格式化完成: 1000 条记录
+2025-06-25 21:55:04 - data_manager - INFO - ✅ 成功加载 1000 条数据记录从: sft_adult_doll_shy_chn.py
+2025-06-25 21:55:04 - data_manager - DEBUG - 🔍 验证数据格式: chinese_shy
+2025-06-25 21:55:04 - data_manager - INFO - ✅ 数据格式验证通过: chinese_shy
+2025-06-25 21:55:04 - data_manager - INFO - ✅ 数据集加载成功: chinese_shy (1000 条记录)
+2025-06-25 21:55:04 - data_manager - INFO - 🎉 数据集加载完成! 总计 2 个数据集，2000 条记录
+2025-06-25 21:55:04 - root - INFO - ✅ 数据加载成功: 2 个数据集
+2025-06-25 21:55:04 - data_manager - DEBUG - 📈 生成数据集统计信息...
+2025-06-25 21:55:04 - data_manager - INFO - 📊 统计信息生成完成: 2000 条总记录
+2025-06-25 21:55:04 - root - INFO - 📊 数据集统计信息:
+2025-06-25 21:55:04 - root - INFO -    total_datasets: 2
+2025-06-25 21:55:04 - root - INFO -    dataset_details: {'english_adult': {'record_count': 1000, 'avg_conversation_length': 2.0, 'unique_roles': ['human', 'gpt']}, 'chinese_shy': {'record_count': 1000, 'avg_conversation_length': 2.0, 'unique_roles': ['human', 'gpt']}}
+2025-06-25 21:55:04 - root - INFO -    total_records: 2000
+2025-06-25 21:55:04 - root - INFO -    data_sources_used: ['english_adult', 'chinese_shy']
+2025-06-25 21:55:04 - root - INFO - ✅ 测试 5 通过
+2025-06-25 21:55:04 - root - INFO - 🧪 执行测试 6/7: test_configuration_logging
+2025-06-25 21:55:04 - root - INFO - ============================================================
+2025-06-25 21:55:04 - root - INFO - ⚙️  测试配置日志记录
+2025-06-25 21:55:04 - root - INFO - ============================================================
+2025-06-25 21:55:04 - root - INFO - 📋 当前项目配置:
+2025-06-25 21:55:04 - root - INFO - 🤖 模型配置详情:
+2025-06-25 21:55:04 - root - INFO -    模型名称: Qwen/Qwen2.5-72B-Instruct
+2025-06-25 21:55:04 - root - INFO -    数据类型: bfloat16
+2025-06-25 21:55:04 - root - INFO -    8位量化: True
+2025-06-25 21:55:04 - root - INFO -    LoRA参数: r=16, alpha=64
+2025-06-25 21:55:04 - root - INFO - 🎯 训练配置详情:
+2025-06-25 21:55:04 - root - INFO -    训练轮数: 3
+2025-06-25 21:55:04 - root - INFO -    批次大小: 4
+2025-06-25 21:55:04 - root - INFO -    学习率: 2e-05
+2025-06-25 21:55:04 - root - INFO -    输出目录: ./models/sft_output
+2025-06-25 21:55:04 - root - INFO - 📊 数据配置详情:
+2025-06-25 21:55:04 - root - INFO -    活跃数据集: ['english_adult', 'chinese_shy']
+2025-06-25 21:55:04 - root - INFO -    最大长度: 512
+2025-06-25 21:55:04 - root - INFO -    输出文件: combined_sft_dataset.json
+2025-06-25 21:55:04 - root - INFO - 📝 日志配置详情:
+2025-06-25 21:55:04 - root - INFO -    日志级别: INFO
+2025-06-25 21:55:04 - root - INFO -    日志文件: logs/training.log
+2025-06-25 21:55:04 - root - INFO -    控制台输出: True
+2025-06-25 21:55:04 - root - INFO - ✅ 测试 6 通过
+2025-06-25 21:55:04 - root - INFO - 🧪 执行测试 7/7: test_simulated_training_flow
+2025-06-25 21:55:04 - root - INFO - ============================================================
+2025-06-25 21:55:04 - root - INFO - 🎭 模拟完整训练流程
+2025-06-25 21:55:04 - root - INFO - ============================================================
+2025-06-25 21:55:04 - root - INFO - 🔧 阶段 1/6: 环境检查
+2025-06-25 21:55:04 - root - DEBUG - 🔍 检查CUDA可用性...
+2025-06-25 21:55:04 - root - DEBUG - 🔍 检查内存使用情况...
+2025-06-25 21:55:04 - root - DEBUG - 🔍 验证依赖库版本...
+2025-06-25 21:55:04 - root - INFO - ✅ 环境检查完成
+2025-06-25 21:55:04 - root - INFO - 📊 阶段 2/6: 数据准备
+2025-06-25 21:55:04 - root - INFO - 🔄 加载训练数据...
+2025-06-25 21:55:04 - root - INFO - 🔄 数据格式验证...
+2025-06-25 21:55:04 - root - INFO - 🔄 数据预处理...
+2025-06-25 21:55:04 - root - INFO - ✅ 数据准备完成: 1000 条训练样本
+2025-06-25 21:55:04 - root - INFO - 🤖 阶段 3/6: 模型设置
+2025-06-25 21:55:04 - root - INFO - 🔄 加载基础模型...
+2025-06-25 21:55:05 - root - INFO - 🔄 配置LoRA参数...
+2025-06-25 21:55:05 - root - INFO - 🔄 设置优化器...
+2025-06-25 21:55:05 - root - INFO - ✅ 模型设置完成
+2025-06-25 21:55:05 - root - INFO - 🚀 阶段 4/6: 训练执行
+2025-06-25 21:55:05 - root - INFO - 📈 Epoch 1/3 开始
+2025-06-25 21:55:05 - root - INFO - 📊 Epoch 1 损失: 2.245
+2025-06-25 21:55:05 - root - INFO - ✅ Epoch 1/3 完成
+2025-06-25 21:55:05 - root - INFO - 📈 Epoch 2/3 开始
+2025-06-25 21:55:05 - root - INFO - 📊 Epoch 2 损失: 2.145
+2025-06-25 21:55:05 - root - INFO - ✅ Epoch 2/3 完成
+2025-06-25 21:55:05 - root - INFO - 📈 Epoch 3/3 开始
+2025-06-25 21:55:05 - root - INFO - 📊 Epoch 3 损失: 2.045
+2025-06-25 21:55:05 - root - INFO - ✅ Epoch 3/3 完成
+2025-06-25 21:55:05 - root - INFO - ✅ 训练执行完成
+2025-06-25 21:55:05 - root - INFO - 💾 阶段 5/6: 模型保存
+2025-06-25 21:55:05 - root - INFO - 🔄 保存模型权重...
+2025-06-25 21:55:05 - root - INFO - 🔄 保存训练配置...
+2025-06-25 21:55:05 - root - INFO - 🔄 生成模型摘要...
+2025-06-25 21:55:05 - root - INFO - ✅ 模型保存完成
+2025-06-25 21:55:05 - root - INFO - 🎯 阶段 6/6: 评估验证
+2025-06-25 21:55:05 - root - INFO - 🔄 加载测试数据...
+2025-06-25 21:55:05 - root - INFO - 🔄 生成评估报告...
+2025-06-25 21:55:05 - root - INFO - 📊 评估指标: BLEU=0.75, ROUGE=0.68
+2025-06-25 21:55:05 - root - INFO - ✅ 评估验证完成
+2025-06-25 21:55:05 - root - INFO - 🎉 完整训练流程模拟成功!
+2025-06-25 21:55:05 - root - INFO - ✅ 测试 7 通过
+2025-06-25 21:55:05 - root - INFO - ============================================================
+2025-06-25 21:55:05 - root - INFO - 📊 测试总结
+2025-06-25 21:55:05 - root - INFO - ============================================================
+2025-06-25 21:55:05 - root - INFO - 🕐 总执行时间: 8.25秒
+2025-06-25 21:55:05 - root - INFO - 📈 执行测试数量: 7
+2025-06-25 21:55:05 - root - INFO - 🎉 日志功能全面测试完成!

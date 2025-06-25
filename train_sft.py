@@ -1,3 +1,5 @@
+import os
+os.environ["DISABLE_FLASH_ATTENTION"] = "1"
 
 import json
 import torch
@@ -41,8 +43,12 @@ def tokenize_function(examples, tokenizer, max_length=512):
     )
 
 def main():
-    # 配置
-    model_name = "meta-llama/Llama-2-7b-chat-hf"
+    # 配置 - 使用开放访问的大模型
+    model_name = "Qwen/Qwen2.5-72B-Instruct"  # 阿里72B开放模型
+    # 其他开放的优秀选择：
+    # model_name = "microsoft/Phi-3-medium-4k-instruct"  # 微软14B模型
+    # model_name = "google/gemma-2-27b-it"  # Google 27B模型
+    # model_name = "mistralai/Mixtral-8x7B-Instruct-v0.1"  # Mistral MoE模型
     dataset_path = "intimate_sft_dataset.json"
     output_dir = "./intimate-model-sft"
     
@@ -53,19 +59,20 @@ def main():
     
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
-        torch_dtype=torch.float16,
+        torch_dtype=torch.bfloat16,  # 使用bfloat16以支持更大模型
         device_map="auto",
-        trust_remote_code=True
+        trust_remote_code=True,
+        load_in_8bit=True,  # 启用8bit量化以节省显存
     )
     
-    # 配置LoRA
+    # 配置LoRA - 适用于大模型
     peft_config = LoraConfig(
         task_type=TaskType.CAUSAL_LM,
         inference_mode=False,
-        r=8,
-        lora_alpha=32,
+        r=16,  # 增加LoRA rank以匹配大模型
+        lora_alpha=64,  # 相应增加alpha
         lora_dropout=0.1,
-        target_modules=["q_proj", "v_proj", "k_proj", "o_proj"]
+        target_modules=["q_proj", "v_proj", "k_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]  # 全面覆盖attention和MLP层
     )
     
     model = get_peft_model(model, peft_config)
